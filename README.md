@@ -1,1 +1,1 @@
-![Screenshot of Todo App](assets/Screenshot.png)
+![Screenshot of Todo App](src/assets/Screenshot.png)
