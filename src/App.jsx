@@ -1,4 +1,4 @@
-import React from "react"; // React only needs to be imported once
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import DarkModeToggle from "./components/DarkModeToggle";
@@ -6,17 +6,15 @@ import Heading from "./components/Heading";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import { addTask, updateTask, deleteTask, toggleCompleted } from "./components/Store/taskSlice"; 
-// Import all the Redux action creators you use
 
 function App() {
   const tasks = useSelector((state) => state.tasks.list);
   const dispatch = useDispatch();
 
-  // Filter tasks into pending and completed
   const pendingTasks = tasks.filter((task) => !task.completed);
   const completedTasks = tasks.filter((task) => task.completed);
 
-  // Dispatch wrapped handlers to pass down to components
+
   const handleAddTask = (task) => dispatch(addTask(task));
   const handleUpdateTask = (task) => dispatch(updateTask(task));
   const handleDeleteTask = (id) => dispatch(deleteTask(id));

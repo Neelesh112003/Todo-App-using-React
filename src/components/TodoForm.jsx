@@ -35,7 +35,7 @@ const TodoForm = ({ onAdd }) => {
               type="text"
               className="form-control"
               id="taskName"
-              placeholder="Buy groceries…"
+              placeholder="Enter task..."
               value={task}
               onChange={(e) => setTask(e.target.value)}
               required
