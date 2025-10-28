@@ -1,0 +1,40 @@
+body{
+  background-color: #f5f7fa;
+  color: #1e1e1e;
+  transition: background-color 0.3s ease, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #0f172a;
+  color: #80858a;
+}
+
+.mode-theme-btn{
+  border: 2px solid #4a90e2;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  top: 10px;
+  left: 85%;
+}
+
+
+
+.mode-theme-btn:hover {
+  background-color: #4a90e2;
+  color: white;
+  transform: scale(1.05);
+}
+
+.row{
+  width: 80%;
+  border: rgba(13,110,253,1) 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgb(253, 254, 255);
+  box-shadow: var(--bs-box-shadow-sm) !important;
+}
+
+.card{
+  background-color: aqua;
+}
